@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --dark-shadeblue: #1c1c44;
+  --medium-shadeblue: #33337c;
+  --light-shadeblue: #4a4ab3;
+  --dark-tintblue: #5757ba;
+  --medium-tintblue: #9c9cd6;
+  --light-tintblue: #e2e2f3;
+}
+.section-profile .main {
+  width: 80%;
+  margin: 2em auto;
+  background-color: #e4e9f7;
+  border: 1px solid var(--dark-tintblue);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease-in-out;
+}
+/* ----- Start head style -------------- */
+.section-profile .main input {
+  text-align: center;
+}
+
+.profile-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-picture {
+  display: flex;
+  justify-content: center;
+}
+.profile-picture img {
+  width: 20%;
+  margin-top: 5%;
+  border: 0 solid;
+  border-radius: 50%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile-head .user-name {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.profile-head .user-name label {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+/* ----- End head style -------------- */
+
+
+
+/* ------ start Input style   -------------- */
+
+/* Profile content styles */
+.profile-content{
+  margin-bottom: 5%;
+}
+.profile-content div {
+  margin-bottom: 20px; /* Spacing between input fields */
+}
+
+.profile-content label {
+  display: block;
+  margin-bottom: 5px; /* Spacing between label and input field */
+  color: var(--medium-shadeblue);
+  font-weight: 600; /* Label font weight */
+}
+
+/* Style for the inputs */
+.profile-content input[type="email"],
+.profile-content input[type="tel"],
+.profile-content input[type="text"] {
+  width: 95%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid var(--light-tintblue); /* Border color */
+  border-radius: 10px;
+  background-color: var(--white);
+  font-size: 16px;
+  color: var(--dark-shadeblue); /* Text color */
+}
+
+/* Disabled input style */
+.profile-content input:disabled {
+  background-color: var(
+    --medium-tintblue
+    ); /* Light blue background for disabled input */
+    color: var(--medium-shadeblue); /* Text color for disabled input */
+    cursor: not-allowed; /* The cursor to display when mouse over */
+  }
+  
+  /* Placeholder color */
+  .profile-content input::placeholder {
+    color: var(--dark-tintblue); /* Placeholder text color */
+  }
+  
+  /* Focus state for inputs */
+  .profile-content input:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: var(--medium-shadeblue); /* Border color on focus */
+    box-shadow: 0 0 5px var(--medium-tintblue); /* Adds a subtle shadow around the input on focus */
+  }
+  
+  /* Hover state for inputs */
+  .profile-content input:hover {
+    border-color: var(--dark-tintblue); /* Darker border on hover */
+  }
+  
+  /* ------ End Input style   -------------- */
+  
+/* ------------ Start btn style-------------- */
+
+.btns {
+  display: flex;
+  justify-content: space-evenly; 
+  margin-top: 20px; 
+  margin-bottom: 3%;
+}
+
+.btns button {
+  background-color: var(--dark-shadeblue); 
+  color: whitesmoke; 
+  border: none; 
+  padding: 15px 30px; 
+  font-size: 16px; 
+  text-transform: uppercase; 
+  border-radius: 20px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.btns button:hover {
+  background-color: var(--medium-shadeblue); 
+  transform: scale(1.1);
+}
+
+.btns a {
+  color: inherit; /* Ensure the anchor tag inherits the button's text color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Adjust the margins, paddings, and other properties as needed to fit your design. */
+
+
+/* ------------ Start btn style-------------- */
+  /* background-color: #0056b3; */
+  
